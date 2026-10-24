@@ -1,0 +1,815 @@
+{
+  "model": "gpt-5-nano",
+  "arms": [
+    {
+      "arm": "A_flat",
+      "tasks": 26,
+      "succeeded": 0,
+      "success_rate": 0.0,
+      "steps_mean": 6,
+      "observation_tokens_mean": 3007.0
+    },
+    {
+      "arm": "B_structured",
+      "tasks": 26,
+      "succeeded": 3,
+      "success_rate": 0.1154,
+      "steps_mean": 5.65,
+      "observation_tokens_mean": 2807.1
+    },
+    {
+      "arm": "C_flat_plus_loop_hint",
+      "tasks": 0
+    },
+    {
+      "arm": "D_flat_plus_generic_hint",
+      "tasks": 0
+    }
+  ],
+  "spent_usd": 0.0521,
+  "per_task": {
+    "A_flat": [
+      {
+        "task_id": "cnn-world",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2633.8,
+        "history": [
+          "click([26]) -> unparsed:click([26])",
+          "click([26]) -> unparsed:click([26])",
+          "click([26]) -> unparsed:click([26])",
+          "click([26]) -> unparsed:click([26])",
+          "click([512]) -> unparsed:click([512])",
+          "click([512]) -> unparsed:click([512])"
+        ]
+      },
+      {
+        "task_id": "cnn-politics",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 34,
+        "observation_tokens_mean": 2630.8,
+        "history": [
+          "click([27]) -> unparsed:click([27])",
+          "click([522]) -> unparsed:click([522])",
+          "click([522]) -> unparsed:click([522])",
+          "click([27]) -> unparsed:click([27])",
+          "click([522]) -> unparsed:click([522])",
+          "click([522]) -> unparsed:click([522])"
+        ]
+      },
+      {
+        "task_id": "cnn-business",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 34,
+        "observation_tokens_mean": 2630.8,
+        "history": [
+          "click[521] -> unparsed:click[521]",
+          "click[529] -> unparsed:click[529]",
+          "click[529] -> unparsed:click[529]",
+          "click[529] -> unparsed:click[529]",
+          "click[529] -> unparsed:click[529]",
+          "click[529] -> unparsed:click[529]"
+        ]
+      },
+      {
+        "task_id": "lemonde-international",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1203,
+        "history": [
+          "click([126]) -> unparsed:click([126])",
+          "click([26]) -> unparsed:click([26])",
+          "click([26]) -> unparsed:click([26])",
+          "click([26]) -> unparsed:click([26])",
+          "click([26]) -> unparsed:click([26])",
+          "click([26]) -> unparsed:click([26])"
+        ]
+      },
+      {
+        "task_id": "lemonde-economie",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1203,
+        "history": [
+          "click('[27]') -> err:TimeoutError",
+          "click('[27]') -> err:TimeoutError",
+          "click('[27]') -> err:TimeoutError",
+          "click('[27]') -> err:TimeoutError",
+          "click('[27]') -> err:TimeoutError",
+          "click('[27]') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lemonde-culture",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1192.3,
+        "history": [
+          "click('276') -> err:TimeoutError",
+          "click('276') -> err:TimeoutError",
+          "click('276') -> err:TimeoutError",
+          "click('276') -> err:TimeoutError",
+          "click('276') -> err:TimeoutError",
+          "click('276') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "euronews-business",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 182,
+        "observation_tokens_mean": 6446.3,
+        "history": [
+          "click([113]) -> unparsed:click([113])",
+          "click([113]) -> unparsed:click([113])",
+          "click([113]) -> unparsed:click([113])",
+          "click([113]) -> unparsed:click([113])",
+          "click([113]) -> unparsed:click([113])",
+          "click([113]) -> unparsed:click([113])"
+        ]
+      },
+      {
+        "task_id": "euronews-next",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 182,
+        "observation_tokens_mean": 6446.3,
+        "history": [
+          "click('36') -> err:TimeoutError",
+          "scroll('down') -> scroll",
+          "click('36') -> err:TimeoutError",
+          "click('Next') -> stale:Next",
+          "click('14') -> err:TimeoutError",
+          "click('120') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "mirror-subscribe",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 48,
+        "observation_tokens_mean": 3001,
+        "history": [
+          "click([580]) -> unparsed:click([580])",
+          "click([580]) -> unparsed:click([580])",
+          "click([580]) -> unparsed:click([580])",
+          "click([580]) -> unparsed:click([580])",
+          "click([580]) -> unparsed:click([580])",
+          "click([580]) -> unparsed:click([580])"
+        ]
+      },
+      {
+        "task_id": "mirror-aboutus",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 48,
+        "observation_tokens_mean": 3001,
+        "history": [
+          "click([558]) -> unparsed:click([558])",
+          "click([546]) -> unparsed:click([546])",
+          "click([586]) -> unparsed:click([586])",
+          "click([546]) -> unparsed:click([546])",
+          "click([546]) -> unparsed:click([546])",
+          "click([546]) -> unparsed:click([546])"
+        ]
+      },
+      {
+        "task_id": "rte-sport",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 1866,
+        "history": [
+          "click([5]) -> unparsed:click([5])",
+          "click([5]) -> unparsed:click([5])",
+          "click([5]) -> unparsed:click([5])",
+          "click([5]) -> unparsed:click([5])",
+          "click([5]) -> unparsed:click([5])",
+          "click([5]) -> unparsed:click([5])"
+        ]
+      },
+      {
+        "task_id": "rte-radio",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 1866,
+        "history": [
+          "click([288]) -> unparsed:click([288])",
+          "click([288]) -> unparsed:click([288])",
+          "click([288]) -> unparsed:click([288])",
+          "click([288]) -> unparsed:click([288])",
+          "click([288]) -> unparsed:click([288])",
+          "click([288]) -> unparsed:click([288])"
+        ]
+      },
+      {
+        "task_id": "irishtimes-podcasts",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 37,
+        "observation_tokens_mean": 4892,
+        "history": [
+          "click([9]) -> unparsed:click([9])",
+          "click([9]) -> unparsed:click([9])",
+          "click([9]) -> unparsed:click([9])",
+          "click([9]) -> unparsed:click([9])",
+          "click([9]) -> unparsed:click([9])",
+          "click([9]) -> unparsed:click([9])"
+        ]
+      },
+      {
+        "task_id": "irishtimes-newsletters",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 37,
+        "observation_tokens_mean": 4892,
+        "history": [
+          "click([10]) -> unparsed:click([10])",
+          "click([10]) -> unparsed:click([10])",
+          "click([10]) -> unparsed:click([10])",
+          "click([10]) -> unparsed:click([10])",
+          "click([10]) -> unparsed:click([10])",
+          "click([10]) -> unparsed:click([10])"
+        ]
+      },
+      {
+        "task_id": "repubblica-rubriche",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 4870,
+        "history": [
+          "click([48]) -> unparsed:click([48])",
+          "click([48]) -> unparsed:click([48])",
+          "click([48]) -> unparsed:click([48])",
+          "click([48]) -> unparsed:click([48])",
+          "click([48]) -> unparsed:click([48])",
+          "click([48]) -> unparsed:click([48])"
+        ]
+      },
+      {
+        "task_id": "lavanguardia-internacional",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 31,
+        "observation_tokens_mean": 2944.7,
+        "history": [
+          "click('[113]') -> err:TimeoutError",
+          "click('[113]') -> err:TimeoutError",
+          "click('[113]') -> err:TimeoutError",
+          "click('[113]') -> err:TimeoutError",
+          "click('[113]') -> err:TimeoutError",
+          "click('[113]') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lavanguardia-politica",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 31,
+        "observation_tokens_mean": 2963.3,
+        "history": [
+          "click([114]) -> unparsed:click([114])",
+          "click([114]) -> unparsed:click([114])",
+          "click([114]) -> unparsed:click([114])",
+          "click([114]) -> unparsed:click([114])",
+          "click([114]) -> unparsed:click([114])",
+          "click([114]) -> unparsed:click([114])"
+        ]
+      },
+      {
+        "task_id": "lavanguardia-opinion",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 31,
+        "observation_tokens_mean": 2963.3,
+        "history": [
+          "click([115]) -> unparsed:click([115])",
+          "click([115]) -> unparsed:click([115])",
+          "click([115]) -> unparsed:click([115])",
+          "click([115]) -> unparsed:click([115])",
+          "click([115]) -> unparsed:click([115])",
+          "click([115]) -> unparsed:click([115])"
+        ]
+      },
+      {
+        "task_id": "abc-espana",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 2906,
+        "history": [
+          "click('[37]') -> err:TimeoutError",
+          "click('[37]') -> err:TimeoutError",
+          "click('[37]') -> err:TimeoutError",
+          "click('[37]') -> err:TimeoutError",
+          "click('[37]') -> err:TimeoutError",
+          "click('[37]') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "abc-opinion",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 2906,
+        "history": [
+          "click('[36]') -> err:TimeoutError",
+          "click('[36]') -> err:TimeoutError",
+          "click('[36]') -> err:TimeoutError",
+          "click('[36]') -> err:TimeoutError",
+          "click('[36]') -> err:TimeoutError",
+          "click('[36]') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "abc-internacional",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 2906,
+        "history": [
+          "click('INTERNACIONAL') -> stale:INTERNACIONAL",
+          "click('INTERNACIONAL') -> stale:INTERNACIONAL",
+          "click('INTERNACIONAL') -> stale:INTERNACIONAL",
+          "click('INTERNACIONAL') -> stale:INTERNACIONAL",
+          "click('INTERNACIONAL') -> stale:INTERNACIONAL",
+          "click('INTERNACIONAL') -> stale:INTERNACIONAL"
+        ]
+      },
+      {
+        "task_id": "abc-economia",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 2906,
+        "history": [
+          "click([40]) -> unparsed:click([40])",
+          "click([40]) -> unparsed:click([40])",
+          "click([40]) -> unparsed:click([40])",
+          "click([40]) -> unparsed:click([40])",
+          "click([40]) -> unparsed:click([40])",
+          "click([40]) -> unparsed:click([40])"
+        ]
+      },
+      {
+        "task_id": "standaard-netbinnen",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 17,
+        "observation_tokens_mean": 2642.3,
+        "history": [
+          "click('261') -> err:TimeoutError",
+          "click('12') -> err:TimeoutError",
+          "click('12') -> err:TimeoutError",
+          "click('12') -> err:TimeoutError",
+          "click('12') -> err:TimeoutError",
+          "click('12') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "standaard-digitalekrant",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 17,
+        "observation_tokens_mean": 2620,
+        "history": [
+          "click('[16] link \"Digitale krant\"' -> err:Error",
+          "click('[16] link \"Digitale krant\"' -> err:Error",
+          "click('[16] link \"Digitale krant\"' -> err:Error",
+          "click('[16] link \"Digitale krant\"' -> err:Error",
+          "click('[16] link \"Digitale krant\"' -> err:Error",
+          "click('[16] link \"Digitale krant\"' -> err:Error"
+        ]
+      },
+      {
+        "task_id": "aljazeera-news",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1824.7,
+        "history": [
+          "click([11]) -> unparsed:click([11])",
+          "click([12]) -> unparsed:click([12])",
+          "click([12]) -> unparsed:click([12])",
+          "click([12]) -> unparsed:click([12])",
+          "click([12]) -> unparsed:click([12])",
+          "click([12]) -> unparsed:click([12])"
+        ]
+      },
+      {
+        "task_id": "aljazeera-sport",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1824.7,
+        "history": [
+          "click([21]) -> unparsed:click([21])",
+          "click([22]) -> unparsed:click([22])",
+          "click([22]) -> unparsed:click([22])",
+          "click([22]) -> unparsed:click([22])",
+          "click([22]) -> unparsed:click([22])",
+          "click([22]) -> unparsed:click([22])"
+        ]
+      }
+    ],
+    "B_structured": [
+      {
+        "task_id": "cnn-world",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2633,
+        "history": [
+          "click([511]) -> unparsed:click([511])",
+          "click([678]) -> unparsed:click([678])",
+          "click([512]) -> unparsed:click([512])",
+          "click([678]) -> unparsed:click([678])",
+          "click([678]) -> unparsed:click([678])",
+          "click([678]) -> unparsed:click([678])"
+        ]
+      },
+      {
+        "task_id": "cnn-politics",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 34,
+        "observation_tokens_mean": 2632.5,
+        "history": [
+          "click(670) -> unparsed:click(670)",
+          "click(522) -> unparsed:click(522)",
+          "click(522) -> unparsed:click(522)",
+          "click(678) -> unparsed:click(678)",
+          "click(675) -> unparsed:click(675)",
+          "click(678) -> unparsed:click(678)"
+        ]
+      },
+      {
+        "task_id": "cnn-business",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 34,
+        "observation_tokens_mean": 2641.5,
+        "history": [
+          "click([650]) -> unparsed:click([650])",
+          "click([675]) -> unparsed:click([675])",
+          "click('[675]') -> click(675)",
+          "click(661) -> unparsed:click(661)",
+          "click('[678]') -> click(678)",
+          "click('[492]') -> click(492)"
+        ]
+      },
+      {
+        "task_id": "lemonde-international",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1266,
+        "history": [
+          "click('320') -> click(320)",
+          "click('276') -> click(276)"
+        ]
+      },
+      {
+        "task_id": "lemonde-economie",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1248,
+        "history": [
+          "click('[320] link \"Reject all cook -> err:Error",
+          "click('[320] link \"Reject all cook -> err:Error",
+          "click('[320] link \"Reject all cook -> err:Error",
+          "click('[320] link \"Reject all cook -> err:Error",
+          "click('[320] link \"Reject all cook -> err:Error",
+          "click('[320] link \"Reject all cook -> err:Error"
+        ]
+      },
+      {
+        "task_id": "lemonde-culture",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 467.3,
+        "history": [
+          "click('320') -> click(320)",
+          "click('277') -> click(277)",
+          "click('3') -> click(3)",
+          "click('3') -> click(3)",
+          "click('3') -> click(3)",
+          "click('277') -> stale:277"
+        ]
+      },
+      {
+        "task_id": "euronews-business",
+        "succeeded": true,
+        "steps": 5,
+        "blocked_at_start": 182,
+        "observation_tokens_mean": 4563.6,
+        "history": [
+          "click('2') -> click(2)",
+          "click('2') -> click(2)",
+          "click('511') -> err:TimeoutError",
+          "click('3') -> click(3)",
+          "click('507') -> click(507)"
+        ]
+      },
+      {
+        "task_id": "euronews-next",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 182,
+        "observation_tokens_mean": 4479.3,
+        "history": [
+          "click('[538] link \"See more articl -> err:Error",
+          "click('[538] link \"See more articl -> err:Error",
+          "click('[538] link \"See more articl -> err:Error",
+          "click('[538] link \"See more articl -> err:Error",
+          "click('[538] link \"See more articl -> err:Error",
+          "click('[538] link \"See more articl -> err:Error"
+        ]
+      },
+      {
+        "task_id": "mirror-subscribe",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 48,
+        "observation_tokens_mean": 2884,
+        "history": [
+          "click([566]) -> unparsed:click([566])",
+          "click([572]) -> unparsed:click([572])",
+          "click([572]) -> unparsed:click([572])",
+          "click([572]) -> unparsed:click([572])",
+          "click([572]) -> unparsed:click([572])",
+          "click([572]) -> unparsed:click([572])"
+        ]
+      },
+      {
+        "task_id": "mirror-aboutus",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 48,
+        "observation_tokens_mean": 2884,
+        "history": [
+          "click([546]) -> unparsed:click([546])",
+          "click([546]) -> unparsed:click([546])",
+          "click([546]) -> unparsed:click([546])",
+          "click([546]) -> unparsed:click([546])",
+          "click([546]) -> unparsed:click([546])",
+          "click([548]) -> unparsed:click([548])"
+        ]
+      },
+      {
+        "task_id": "rte-sport",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 1913,
+        "history": [
+          "click([5]) -> unparsed:click([5])",
+          "click([338]) -> unparsed:click([338])",
+          "click([5]) -> unparsed:click([5])",
+          "click([5]) -> unparsed:click([5])",
+          "click([5]) -> unparsed:click([5])",
+          "click([5]) -> unparsed:click([5])"
+        ]
+      },
+      {
+        "task_id": "rte-radio",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 1913,
+        "history": [
+          "click([288]) -> unparsed:click([288])",
+          "click([288]) -> unparsed:click([288])",
+          "click([288]) -> unparsed:click([288])",
+          "click([288]) -> unparsed:click([288])",
+          "click([338]) -> unparsed:click([338])",
+          "click([288]) -> unparsed:click([288])"
+        ]
+      },
+      {
+        "task_id": "irishtimes-podcasts",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 37,
+        "observation_tokens_mean": 4955,
+        "history": [
+          "click([140]) -> unparsed:click([140])",
+          "click(140) -> unparsed:click(140)",
+          "click(140) -> unparsed:click(140)",
+          "click(140) -> unparsed:click(140)",
+          "click(140) -> unparsed:click(140)",
+          "click(140) -> unparsed:click(140)"
+        ]
+      },
+      {
+        "task_id": "irishtimes-newsletters",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 37,
+        "observation_tokens_mean": 4955,
+        "history": [
+          "click([170]) -> unparsed:click([170])",
+          "click([170]) -> unparsed:click([170])",
+          "click([170]) -> unparsed:click([170])",
+          "click([170]) -> unparsed:click([170])",
+          "click([170]) -> unparsed:click([170])",
+          "click([170]) -> unparsed:click([170])"
+        ]
+      },
+      {
+        "task_id": "repubblica-rubriche",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 5037,
+        "history": [
+          "click([48]) -> unparsed:click([48])",
+          "click([48]) -> unparsed:click([48])",
+          "click([48]) -> unparsed:click([48])",
+          "click([48]) -> unparsed:click([48])",
+          "click([48]) -> unparsed:click([48])",
+          "click(48) -> unparsed:click(48)"
+        ]
+      },
+      {
+        "task_id": "lavanguardia-internacional",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 31,
+        "observation_tokens_mean": 3246.5,
+        "history": [
+          "click('[31]') -> err:TimeoutError",
+          "click('[31]') -> err:TimeoutError",
+          "click('[303]') -> err:TimeoutError",
+          "click('[3]') -> click(3)",
+          "click('[206]') -> err:TimeoutError",
+          "click('[396]') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lavanguardia-politica",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 31,
+        "observation_tokens_mean": 2955,
+        "history": [
+          "click([339]) -> unparsed:click([339])",
+          "click([339]) -> unparsed:click([339])",
+          "click([320]) -> unparsed:click([320])",
+          "click([320]) -> unparsed:click([320])",
+          "click([320]) -> unparsed:click([320])",
+          "click([320]) -> unparsed:click([320])"
+        ]
+      },
+      {
+        "task_id": "lavanguardia-opinion",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 31,
+        "observation_tokens_mean": 2974,
+        "history": [
+          "click([2]) -> unparsed:click([2])",
+          "click([3]) -> unparsed:click([3])",
+          "click([2]) -> unparsed:click([2])",
+          "click([235]) -> unparsed:click([235])",
+          "click([235]) -> unparsed:click([235])",
+          "click([3]) -> unparsed:click([3])"
+        ]
+      },
+      {
+        "task_id": "abc-espana",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 2900,
+        "history": [
+          "click([60]) -> unparsed:click([60])",
+          "click('60') -> err:TimeoutError",
+          "click('60') -> err:TimeoutError",
+          "click('60') -> err:TimeoutError",
+          "click('60') -> err:TimeoutError",
+          "click('60') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "abc-opinion",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 2900,
+        "history": [
+          "click([208]) -> unparsed:click([208])",
+          "click([208]) -> unparsed:click([208])",
+          "click([208]) -> unparsed:click([208])",
+          "click([208]) -> unparsed:click([208])",
+          "click([208]) -> unparsed:click([208])",
+          "click([208]) -> unparsed:click([208])"
+        ]
+      },
+      {
+        "task_id": "abc-internacional",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 2900,
+        "history": [
+          "click('[50] link \"Nacional\"') -> err:Error",
+          "click('[50] link \"Nacional\"') -> err:Error",
+          "click('[4] link \"Pol\u00edtica de Cooki -> err:Error",
+          "click('[50] link \"Nacional\"') -> err:Error",
+          "click('[1] link \"Pol\u00edtica de Cooki -> err:Error",
+          "click('[1] link \"Pol\u00edtica de Cooki -> err:Error"
+        ]
+      },
+      {
+        "task_id": "abc-economia",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 2900,
+        "history": [
+          "click([146]) -> unparsed:click([146])",
+          "click([146]) -> unparsed:click([146])",
+          "click([146]) -> unparsed:click([146])",
+          "click([146]) -> unparsed:click([146])",
+          "click([146]) -> unparsed:click([146])",
+          "click([146]) -> unparsed:click([146])"
+        ]
+      },
+      {
+        "task_id": "standaard-netbinnen",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 17,
+        "observation_tokens_mean": 2647,
+        "history": [
+          "click('2') -> click(2)",
+          "click('2') -> click(2)",
+          "click('11') -> err:TimeoutError",
+          "click('11') -> err:TimeoutError",
+          "click('2') -> click(2)",
+          "click('9') -> click(9)"
+        ]
+      },
+      {
+        "task_id": "standaard-digitalekrant",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 17,
+        "observation_tokens_mean": 1310,
+        "history": [
+          "click('11') -> err:TimeoutError",
+          "click('9') -> click(9)",
+          "click('6') -> click(6)",
+          "click('5') -> stale:5",
+          "click('11') -> stale:11",
+          "click('3') -> click(3)"
+        ]
+      },
+      {
+        "task_id": "aljazeera-news",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1891.3,
+        "history": [
+          "click('[216] div \"You rely on Al J -> err:Error",
+          "click('[13]') -> err:TimeoutError",
+          "click('[222] button \"Allow all\"') -> err:Error",
+          "click('[222] button \"Allow all\"') -> err:Error",
+          "click('[12] link \"News\"') -> err:Error",
+          "click('[222] button \"Allow all\"') -> err:Error"
+        ]
+      },
+      {
+        "task_id": "aljazeera-sport",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1889.5,
+        "history": [
+          "click('216') -> click(216)",
+          "click('22') -> click(22)"
+        ]
+      }
+    ],
+    "C_flat_plus_loop_hint": [],
+    "D_flat_plus_generic_hint": []
+  },
+  "success_delta": 0.1154,
+  "paired": {
+    "both": 0,
+    "only_A": 0,
+    "only_B": 3
+  }
+}

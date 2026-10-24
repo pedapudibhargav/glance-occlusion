@@ -1,0 +1,108 @@
+{
+  "cnn": {
+    "live_blocked": 36,
+    "replay_blocked": 37,
+    "delta_fraction": 0.028,
+    "live_overlay": "Legal Terms and Privacy",
+    "replay_overlay": "Legal Terms and Privacy",
+    "overlay_present_on_replay": true,
+    "usable": true
+  },
+  "lemonde": {
+    "live_blocked": 25,
+    "replay_blocked": 25,
+    "delta_fraction": 0.0,
+    "live_overlay": "Main menu",
+    "replay_overlay": "Main menu",
+    "overlay_present_on_replay": true,
+    "usable": true
+  },
+  "euronews": {
+    "live_blocked": 171,
+    "replay_blocked": 171,
+    "delta_fraction": 0.0,
+    "live_overlay": "Welcome to euronews Consent Management",
+    "replay_overlay": "Welcome to euronews Consent Management",
+    "overlay_present_on_replay": true,
+    "usable": true
+  },
+  "mirror": {
+    "live_blocked": 48,
+    "replay_blocked": 48,
+    "delta_fraction": 0.0,
+    "live_overlay": "Processing of Your Personal Information",
+    "replay_overlay": "Processing of Your Personal Information",
+    "overlay_present_on_replay": true,
+    "usable": true
+  },
+  "rte": {
+    "live_blocked": 36,
+    "replay_blocked": 36,
+    "delta_fraction": 0.0,
+    "live_overlay": "About Your Privacy",
+    "replay_overlay": "About Your Privacy",
+    "overlay_present_on_replay": true,
+    "usable": true
+  },
+  "irishtimes": {
+    "live_blocked": 37,
+    "replay_blocked": 37,
+    "delta_fraction": 0.0,
+    "live_overlay": "We value your privacy",
+    "replay_overlay": "We value your privacy",
+    "overlay_present_on_replay": true,
+    "usable": true
+  },
+  "repubblica": {
+    "live_blocked": 25,
+    "replay_blocked": 25,
+    "delta_fraction": 0.0,
+    "live_overlay": "powered by I ricavi ottenuti dalla pubblicit\u00e0 personalizzata",
+    "replay_overlay": "powered by I ricavi ottenuti dalla pubblicit\u00e0 personalizzata",
+    "overlay_present_on_replay": true,
+    "usable": true
+  },
+  "lavanguardia": {
+    "live_blocked": 31,
+    "replay_blocked": 31,
+    "delta_fraction": 0.0,
+    "live_overlay": "\u00a1Bienvenido a La Vanguardia Gesti\u00f3n del consentimiento",
+    "replay_overlay": "\u00a1Bienvenido a La Vanguardia Gesti\u00f3n del consentimiento",
+    "overlay_present_on_replay": true,
+    "usable": true
+  },
+  "abc": {
+    "live_blocked": 44,
+    "replay_blocked": 44,
+    "delta_fraction": 0.0,
+    "live_overlay": "Configura tu navegaci\u00f3n El contenido de ABC es fruto del tra",
+    "replay_overlay": "Configura tu navegaci\u00f3n El contenido de ABC es fruto del tra",
+    "overlay_present_on_replay": true,
+    "usable": true
+  },
+  "standaard": {
+    "error": "Error: Page.goto: net::ERR_FAILED at https://www.standaard.be/\nCall log:\n  - navigating to \"https://www.standaard.be/\", waiting until \"commit\"\n",
+    "usable": false
+  },
+  "aljazeera": {
+    "live_blocked": 11,
+    "replay_blocked": 11,
+    "delta_fraction": 0.0,
+    "live_overlay": "You rely on Al Jazeera for truth and transparency",
+    "replay_overlay": "You rely on Al Jazeera for truth and transparency",
+    "overlay_present_on_replay": true,
+    "usable": true
+  },
+  "_usable": [
+    "cnn",
+    "lemonde",
+    "euronews",
+    "mirror",
+    "rte",
+    "irishtimes",
+    "repubblica",
+    "lavanguardia",
+    "abc",
+    "aljazeera"
+  ]
+}

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GLANCE probe fixture</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; padding: 24px; }
+  h1 { font-size: 18px; }
+  section { border: 1px solid #ccc; padding: 16px; margin: 16px 0; }
+  button { padding: 8px 14px; font-size: 14px; }
+
+  /* The case the probe exists for: a consent banner covering a real button.
+     It is position:fixed with a high z-index, so the button is present in the
+     accessibility tree, correctly named, and completely unclickable. */
+  #consent {
+    position: fixed; left: 0; right: 0; bottom: 0;
+    background: #222; color: #fff; padding: 20px; z-index: 9999;
+  }
+
+  /* Partial occlusion: a sticky header covering only the top edge. A single
+     centre-point hit test can miss this; the corner probes should not. */
+  #sticky-header {
+    position: fixed; top: 0; left: 0; right: 0; height: 56px;
+    background: rgba(40,80,160,.95); color: #fff; z-index: 500;
+  }
+  #under-header { position: absolute; top: 34px; left: 24px; }
+
+  .tiny { width: 8px; height: 8px; padding: 0; }
+  .offscreen { position: absolute; top: 4000px; }
+</style>
+</head>
+<body>
+<div id="sticky-header">sticky header</div>
+
+<h1>GLANCE probe fixture</h1>
+
+<section>
+  <h2>clean</h2>
+  <button id="clean-button" aria-label="Save changes">Save changes</button>
+</section>
+
+<section>
+  <h2>occluded by consent banner</h2>
+  <button id="occluded-button">Accept terms</button>
+</section>
+
+<section>
+  <h2>partially occluded by sticky header</h2>
+  <button id="under-header">Partially covered</button>
+</section>
+
+<section>
+  <h2>generic name</h2>
+  <button id="generic-button">Button</button>
+</section>
+
+<section>
+  <h2>name collisions</h2>
+  <button class="edit">Edit</button>
+  <button class="edit">Edit</button>
+  <button class="edit">Edit</button>
+  <button class="edit">Edit</button>
+  <button id="collide-button" class="edit">Edit</button>
+</section>
+
+<section>
+  <h2>div with pointer cursor, no role</h2>
+  <div id="div-button" style="cursor:pointer; display:inline-block; padding:8px; background:#eee;">
+    Looks clickable
+  </div>
+</section>
+
+<section>
+  <h2>small target</h2>
+  <button id="tiny-button" class="tiny" aria-label="Close"></button>
+</section>
+
+<section>
+  <h2>offscreen</h2>
+  <button id="offscreen-button" class="offscreen">Far below</button>
+</section>
+
+<section>
+  <h2>state toggles, for the label definition</h2>
+  <button id="expand-button" aria-expanded="false">Toggle details</button>
+  <input id="check-box" type="checkbox" aria-checked="false">
+  <input id="text-field" type="text" placeholder="Your name">
+  <dialog id="the-dialog"><p>dialog body</p></dialog>
+  <button id="open-dialog">Open dialog</button>
+</section>
+
+<section>
+  <h2>mutation source</h2>
+  <button id="mutate-button">Mutate subtree</button>
+  <div id="mutation-target"><span>original</span></div>
+</section>
+
+<section>
+  <h2>shadow root</h2>
+  <div id="shadow-host"></div>
+</section>
+
+<div id="consent">
+  This site uses cookies.
+  <button id="consent-accept">Accept</button>
+</div>
+
+<script>
+  // The consent banner is absolutely over #occluded-button only if they
+  // overlap; place the button under the banner explicitly so the fixture is
+  // deterministic regardless of viewport height.
+  const occluded = document.getElementById('occluded-button');
+  const banner = document.getElementById('consent');
+  requestAnimationFrame(() => {
+    const bannerRect = banner.getBoundingClientRect();
+    occluded.style.position = 'fixed';
+    occluded.style.left = '40px';
+    occluded.style.top = (bannerRect.top + 8) + 'px';
+    occluded.style.zIndex = '1';
+  });
+
+  document.getElementById('expand-button').addEventListener('click', (e) => {
+    const next = e.target.getAttribute('aria-expanded') !== 'true';
+    e.target.setAttribute('aria-expanded', String(next));
+  });
+
+  document.getElementById('open-dialog').addEventListener('click', () => {
+    document.getElementById('the-dialog').showModal();
+  });
+
+  document.getElementById('mutate-button').addEventListener('click', () => {
+    const target = document.getElementById('mutation-target');
+    target.innerHTML = '<span>changed ' + Date.now() + '</span>';
+  });
+
+  const host = document.getElementById('shadow-host');
+  const root = host.attachShadow({ mode: 'open' });
+  root.innerHTML = '<button id="shadow-button" style="padding:8px">Inside shadow root</button>';
+  window.__shadowButton = root.getElementById('shadow-button');
+</script>
+</body>
+</html>

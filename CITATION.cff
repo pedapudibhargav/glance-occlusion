@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "Occlusion-Aware Observations for Web Agents"
+message: "If you use this software or benchmark, please cite it."
+type: software
+authors:
+  - family-names: Pedapudi
+    given-names: Bhargav
+    alias: pedapudibhargav
+abstract: >-
+  Browser agents are given a list of named elements that cannot express
+  occlusion, so a covered element is indistinguishable from a clickable one.
+  This repository holds the measurement code, the four-arm ablation and a
+  deterministic HAR benchmark for that finding.
+keywords:
+  - web agents
+  - LLM agents
+  - browser automation
+  - accessibility tree
+  - occlusion
+  - Chrome DevTools Protocol
+  - reproducible benchmark
+license: MIT
+repository-code: "https://github.com/pedapudibhargav/glance-occlusion"

@@ -1,0 +1,142 @@
+{
+  "bbc": {
+    "blocked_hit_test": 33,
+    "ax_top_nodes": 1671,
+    "ax_merged_nodes": 1737,
+    "frames": 5,
+    "frames_unreadable": 0,
+    "paint_vs_hit": {
+      "elements": 189,
+      "paint_covered": 31,
+      "hit_covered": 33,
+      "agree": 31,
+      "paint_only": 0,
+      "hit_only": 2
+    },
+    "dismiss_in_ax_top": false,
+    "dismiss_in_ax_merged": true,
+    "dismiss_in_pw": true,
+    "ax_occlusion_props_emitted": []
+  },
+  "spiegel": {
+    "blocked_hit_test": 27,
+    "ax_top_nodes": 8222,
+    "ax_merged_nodes": 8362,
+    "frames": 3,
+    "frames_unreadable": 0,
+    "paint_vs_hit": {
+      "elements": 713,
+      "paint_covered": 6,
+      "hit_covered": 27,
+      "agree": 4,
+      "paint_only": 2,
+      "hit_only": 23
+    },
+    "dismiss_in_ax_top": false,
+    "dismiss_in_ax_merged": true,
+    "dismiss_in_pw": true,
+    "ax_occlusion_props_emitted": []
+  },
+  "ft": {
+    "blocked_hit_test": 32,
+    "ax_top_nodes": 3032,
+    "ax_merged_nodes": 3143,
+    "frames": 12,
+    "frames_unreadable": 0,
+    "paint_vs_hit": {
+      "elements": 314,
+      "paint_covered": 0,
+      "hit_covered": 30,
+      "agree": 0,
+      "paint_only": 0,
+      "hit_only": 30
+    },
+    "dismiss_in_ax_top": false,
+    "dismiss_in_ax_merged": true,
+    "dismiss_in_pw": true,
+    "ax_occlusion_props_emitted": []
+  },
+  "skysports": {
+    "blocked_hit_test": 42,
+    "ax_top_nodes": 1394,
+    "ax_merged_nodes": 1461,
+    "frames": 3,
+    "frames_unreadable": 0,
+    "paint_vs_hit": {
+      "elements": 200,
+      "paint_covered": 30,
+      "hit_covered": 42,
+      "agree": 26,
+      "paint_only": 4,
+      "hit_only": 16
+    },
+    "dismiss_in_ax_top": false,
+    "dismiss_in_ax_merged": true,
+    "dismiss_in_pw": true,
+    "ax_occlusion_props_emitted": []
+  },
+  "cnn": {
+    "blocked_hit_test": 38,
+    "ax_top_nodes": 387,
+    "ax_merged_nodes": 402,
+    "frames": 8,
+    "frames_unreadable": 0,
+    "paint_vs_hit": {
+      "elements": 287,
+      "paint_covered": 86,
+      "hit_covered": 36,
+      "agree": 34,
+      "paint_only": 52,
+      "hit_only": 2
+    },
+    "ax_occlusion_props_emitted": []
+  },
+  "lemonde": {
+    "blocked_hit_test": 25,
+    "ax_top_nodes": 1571,
+    "ax_merged_nodes": 1578,
+    "frames": 4,
+    "frames_unreadable": 0,
+    "paint_vs_hit": {
+      "elements": 111,
+      "paint_covered": 24,
+      "hit_covered": 25,
+      "agree": 21,
+      "paint_only": 3,
+      "hit_only": 4
+    },
+    "ax_occlusion_props_emitted": []
+  },
+  "euronews": {
+    "blocked_hit_test": 126,
+    "ax_top_nodes": 1575,
+    "ax_merged_nodes": 1578,
+    "frames": 2,
+    "frames_unreadable": 0,
+    "paint_vs_hit": {
+      "elements": 575,
+      "paint_covered": 255,
+      "hit_covered": 152,
+      "agree": 140,
+      "paint_only": 115,
+      "hit_only": 12
+    },
+    "ax_occlusion_props_emitted": []
+  },
+  "irishtimes": {
+    "blocked_hit_test": 39,
+    "ax_top_nodes": 4146,
+    "ax_merged_nodes": 4201,
+    "frames": 6,
+    "frames_unreadable": 0,
+    "paint_vs_hit": {
+      "elements": 494,
+      "paint_covered": 41,
+      "hit_covered": 39,
+      "agree": 37,
+      "paint_only": 4,
+      "hit_only": 2
+    },
+    "ax_occlusion_props_emitted": []
+  }
+}

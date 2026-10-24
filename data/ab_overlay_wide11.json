@@ -1,0 +1,757 @@
+{
+  "model": "gpt-5-mini",
+  "arms": [
+    {
+      "arm": "A_flat",
+      "tasks": 26,
+      "succeeded": 4,
+      "success_rate": 0.1538,
+      "steps_mean": 5.23,
+      "observation_tokens_mean": 3008.2
+    },
+    {
+      "arm": "B_structured",
+      "tasks": 26,
+      "succeeded": 16,
+      "success_rate": 0.6154,
+      "steps_mean": 4.19,
+      "observation_tokens_mean": 2724.9
+    },
+    {
+      "arm": "C_flat_plus_loop_hint",
+      "tasks": 0
+    },
+    {
+      "arm": "D_flat_plus_generic_hint",
+      "tasks": 0
+    }
+  ],
+  "spent_usd": 0.2081,
+  "per_task": {
+    "A_flat": [
+      {
+        "task_id": "cnn-world",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 2636.5,
+        "history": [
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "cnn-politics",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2648.8,
+        "history": [
+          "click('27') -> err:TimeoutError",
+          "click('27') -> err:TimeoutError",
+          "click('27') -> err:TimeoutError",
+          "click('27') -> err:TimeoutError",
+          "click('27') -> err:TimeoutError",
+          "click('27') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "cnn-business",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2648.8,
+        "history": [
+          "click('28') -> err:TimeoutError",
+          "click('28') -> err:TimeoutError",
+          "click('28') -> err:TimeoutError",
+          "click('28') -> err:TimeoutError",
+          "click('28') -> err:TimeoutError",
+          "click('28') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lemonde-international",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1199.3,
+        "history": [
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('276') -> err:TimeoutError",
+          "click('276') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('276') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lemonde-economie",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1196.3,
+        "history": [
+          "click('277') -> err:TimeoutError",
+          "click('277') -> err:TimeoutError",
+          "click('277') -> err:TimeoutError",
+          "click('277') -> err:TimeoutError",
+          "click('277') -> err:TimeoutError",
+          "click('277') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lemonde-culture",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1211,
+        "history": [
+          "click('31') -> err:TimeoutError",
+          "click('32') -> err:TimeoutError",
+          "click('32') -> err:TimeoutError",
+          "click('31') -> err:TimeoutError",
+          "click('32') -> err:TimeoutError",
+          "click('32') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "euronews-business",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 182,
+        "observation_tokens_mean": 6446.3,
+        "history": [
+          "click('113') -> err:TimeoutError",
+          "click('113') -> err:TimeoutError",
+          "click('113') -> err:TimeoutError",
+          "click('113') -> err:TimeoutError",
+          "click('113') -> err:TimeoutError",
+          "click('113') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "euronews-next",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 182,
+        "observation_tokens_mean": 6446.3,
+        "history": [
+          "click('120') -> err:TimeoutError",
+          "click('120') -> err:TimeoutError",
+          "click('120') -> err:TimeoutError",
+          "click('120') -> err:TimeoutError",
+          "click('120') -> err:TimeoutError",
+          "click('120') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "mirror-subscribe",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 48,
+        "observation_tokens_mean": 3001,
+        "history": [
+          "click('180') -> err:TimeoutError",
+          "click('180') -> err:TimeoutError",
+          "click('180') -> err:TimeoutError",
+          "click('180') -> err:TimeoutError",
+          "click('180') -> err:TimeoutError",
+          "click('180') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "mirror-aboutus",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 48,
+        "observation_tokens_mean": 3001,
+        "history": [
+          "click('546') -> err:TimeoutError",
+          "click('546') -> err:TimeoutError",
+          "click('546') -> err:TimeoutError",
+          "click('546') -> err:TimeoutError",
+          "click('546') -> err:TimeoutError",
+          "click('546') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "rte-sport",
+        "succeeded": true,
+        "steps": 1,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 1884,
+        "history": [
+          "click('5') -> click(5)"
+        ]
+      },
+      {
+        "task_id": "rte-radio",
+        "succeeded": true,
+        "steps": 1,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 1884,
+        "history": [
+          "click('289') -> click(289)"
+        ]
+      },
+      {
+        "task_id": "irishtimes-podcasts",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 37,
+        "observation_tokens_mean": 4892,
+        "history": [
+          "click('9') -> err:TimeoutError",
+          "click('140') -> err:TimeoutError",
+          "click('9') -> err:TimeoutError",
+          "click('140') -> err:TimeoutError",
+          "click('139') -> err:TimeoutError",
+          "click('140') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "irishtimes-newsletters",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 37,
+        "observation_tokens_mean": 4892,
+        "history": [
+          "click('10') -> err:TimeoutError",
+          "click('10') -> err:TimeoutError",
+          "click('10') -> err:TimeoutError",
+          "click('10') -> err:TimeoutError",
+          "click('10') -> err:TimeoutError",
+          "click('10') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "repubblica-rubriche",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 4873,
+        "history": [
+          "click('48') -> err:TimeoutError",
+          "click('48') -> err:TimeoutError",
+          "click('48') -> err:TimeoutError",
+          "click('48') -> err:TimeoutError",
+          "click('48') -> err:TimeoutError",
+          "click('48') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lavanguardia-internacional",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 31,
+        "observation_tokens_mean": 2956.7,
+        "history": [
+          "click('113') -> err:TimeoutError",
+          "click('113') -> err:TimeoutError",
+          "click('113') -> err:TimeoutError",
+          "click('113') -> err:TimeoutError",
+          "click('113') -> err:TimeoutError",
+          "click('113') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lavanguardia-politica",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 31,
+        "observation_tokens_mean": 2956.7,
+        "history": [
+          "click('114') -> err:TimeoutError",
+          "click('114') -> err:TimeoutError",
+          "click('114') -> err:TimeoutError",
+          "click('114') -> err:TimeoutError",
+          "click('114') -> err:TimeoutError",
+          "click('114') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lavanguardia-opinion",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 31,
+        "observation_tokens_mean": 2956.7,
+        "history": [
+          "click('115') -> err:TimeoutError",
+          "click('115') -> err:TimeoutError",
+          "click('115') -> err:TimeoutError",
+          "click('115') -> err:TimeoutError",
+          "click('115') -> err:TimeoutError",
+          "click('115') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "abc-espana",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 2906,
+        "history": [
+          "click('37') -> err:TimeoutError",
+          "click('37') -> err:TimeoutError",
+          "click('37') -> err:TimeoutError",
+          "click('37') -> err:TimeoutError",
+          "click('37') -> err:TimeoutError",
+          "click('37') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "abc-opinion",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 2906,
+        "history": [
+          "click('36') -> err:TimeoutError",
+          "click('36') -> err:TimeoutError",
+          "click('36') -> err:TimeoutError",
+          "click('36') -> err:TimeoutError",
+          "click('36') -> err:TimeoutError",
+          "click('36') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "abc-internacional",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 2906,
+        "history": [
+          "click('39') -> err:TimeoutError",
+          "click('39') -> err:TimeoutError",
+          "click('39') -> err:TimeoutError",
+          "click('39') -> err:TimeoutError",
+          "click('39') -> err:TimeoutError",
+          "click('39') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "abc-economia",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 2906,
+        "history": [
+          "click('40') -> err:TimeoutError",
+          "click('40') -> err:TimeoutError",
+          "click('40') -> err:TimeoutError",
+          "click('40') -> err:TimeoutError",
+          "click('40') -> err:TimeoutError",
+          "click('40') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "standaard-netbinnen",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 17,
+        "observation_tokens_mean": 2620,
+        "history": [
+          "click('21') -> err:TimeoutError",
+          "click('21') -> err:TimeoutError",
+          "click('21') -> err:TimeoutError",
+          "click('21') -> err:TimeoutError",
+          "click('21') -> err:TimeoutError",
+          "click('21') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "standaard-digitalekrant",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 17,
+        "observation_tokens_mean": 2609.8,
+        "history": [
+          "click('16') -> err:TimeoutError",
+          "click('286') -> err:TimeoutError",
+          "click('294') -> err:TimeoutError",
+          "click('294') -> err:TimeoutError",
+          "click('294') -> err:TimeoutError",
+          "click('294') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "aljazeera-news",
+        "succeeded": true,
+        "steps": 1,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1815,
+        "history": [
+          "click('11') -> click(11)"
+        ]
+      },
+      {
+        "task_id": "aljazeera-sport",
+        "succeeded": true,
+        "steps": 1,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1815,
+        "history": [
+          "click('21') -> click(21)"
+        ]
+      }
+    ],
+    "B_structured": [
+      {
+        "task_id": "cnn-world",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2745.2,
+        "history": [
+          "click('677') -> click(677)",
+          "click('660') -> click(660)",
+          "click('630') -> click(630)",
+          "click('27') -> click(27)"
+        ]
+      },
+      {
+        "task_id": "cnn-politics",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2741.5,
+        "history": [
+          "click('677') -> click(677)",
+          "click('660') -> click(660)",
+          "click('630') -> click(630)",
+          "click('28') -> click(28)"
+        ]
+      },
+      {
+        "task_id": "cnn-business",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2674,
+        "history": [
+          "click('677') -> click(677)",
+          "click('28') -> click(28)"
+        ]
+      },
+      {
+        "task_id": "lemonde-international",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1264.5,
+        "history": [
+          "click('321') -> click(321)",
+          "click('275') -> click(275)"
+        ]
+      },
+      {
+        "task_id": "lemonde-economie",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 465.5,
+        "history": [
+          "click('322') -> click(322)",
+          "click('276') -> click(276)",
+          "click('4') -> click(4)",
+          "click('3') -> click(3)",
+          "type('5', 'answer') -> type(5)",
+          "click('8') -> click(8)"
+        ]
+      },
+      {
+        "task_id": "lemonde-culture",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 465.8,
+        "history": [
+          "click('321') -> click(321)",
+          "click('281') -> click(281)",
+          "click('8') -> click(8)",
+          "click('4') -> click(4)",
+          "type('5', 'answer') -> type(5)",
+          "click('3') -> click(3)"
+        ]
+      },
+      {
+        "task_id": "euronews-business",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 182,
+        "observation_tokens_mean": 4771,
+        "history": [
+          "click('8') -> click(8)",
+          "click('244') -> click(244)",
+          "click('244') -> click(244)",
+          "click('505') -> click(505)"
+        ]
+      },
+      {
+        "task_id": "euronews-next",
+        "succeeded": true,
+        "steps": 3,
+        "blocked_at_start": 182,
+        "observation_tokens_mean": 5004.7,
+        "history": [
+          "click('538') -> err:TimeoutError",
+          "click('3') -> click(3)",
+          "click('112') -> click(112)"
+        ]
+      },
+      {
+        "task_id": "mirror-subscribe",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 48,
+        "observation_tokens_mean": 2524.8,
+        "history": [
+          "click('590') -> click(590)",
+          "click('8') -> click(8)",
+          "click('579') -> err:TimeoutError",
+          "click('2') -> click(2)",
+          "click('2') -> click(2)",
+          "click('Gutter_gutter__kLC93') -> stale:Gutter_gutter__kLC93"
+        ]
+      },
+      {
+        "task_id": "mirror-aboutus",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 48,
+        "observation_tokens_mean": 2939.2,
+        "history": [
+          "click('590') -> click(590)",
+          "click('6') -> click(6)",
+          "click('2') -> click(2)",
+          "click('Gutter_gutter__kLC93') -> stale:Gutter_gutter__kLC93",
+          "click('Gutter_gutter__kLC93') -> stale:Gutter_gutter__kLC93",
+          "click('Gutter_gutter__kLC93') -> stale:Gutter_gutter__kLC93"
+        ]
+      },
+      {
+        "task_id": "rte-sport",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 1905.5,
+        "history": [
+          "click('343') -> click(343)",
+          "click('337') -> click(337)",
+          "click('436') -> click(436)",
+          "click('5') -> click(5)"
+        ]
+      },
+      {
+        "task_id": "rte-radio",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 1905.5,
+        "history": [
+          "click('343') -> click(343)",
+          "click('337') -> click(337)",
+          "click('436') -> click(436)",
+          "click('289') -> click(289)"
+        ]
+      },
+      {
+        "task_id": "irishtimes-podcasts",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 37,
+        "observation_tokens_mean": 4935.7,
+        "history": [
+          "click('17') -> err:TimeoutError",
+          "click('17') -> err:TimeoutError",
+          "click('17') -> err:TimeoutError",
+          "click('17') -> err:TimeoutError",
+          "click('17') -> err:TimeoutError",
+          "click('17') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "irishtimes-newsletters",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 37,
+        "observation_tokens_mean": 4935.7,
+        "history": [
+          "click('17') -> err:TimeoutError",
+          "click('17') -> err:TimeoutError",
+          "click('17') -> err:TimeoutError",
+          "click('17') -> err:TimeoutError",
+          "click('17') -> err:TimeoutError",
+          "click('17') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "repubblica-rubriche",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 5073.7,
+        "history": [
+          "click('612') -> click(612)",
+          "click('48') -> err:TimeoutError",
+          "click('49') -> err:TimeoutError",
+          "click('49') -> err:TimeoutError",
+          "click('49') -> err:TimeoutError",
+          "click('49') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lavanguardia-internacional",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 31,
+        "observation_tokens_mean": 3045.5,
+        "history": [
+          "click('12') -> click(12)",
+          "click('101') -> click(101)"
+        ]
+      },
+      {
+        "task_id": "lavanguardia-politica",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 31,
+        "observation_tokens_mean": 3045.5,
+        "history": [
+          "click('12') -> click(12)",
+          "click('102') -> click(102)"
+        ]
+      },
+      {
+        "task_id": "lavanguardia-opinion",
+        "succeeded": true,
+        "steps": 5,
+        "blocked_at_start": 31,
+        "observation_tokens_mean": 2417.8,
+        "history": [
+          "click('12') -> click(12)",
+          "click('103') -> err:TimeoutError",
+          "click('539') -> click(539)",
+          "click('30') -> click(30)",
+          "click('103') -> click(103)"
+        ]
+      },
+      {
+        "task_id": "abc-espana",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 3046.5,
+        "history": [
+          "click('8') -> click(8)",
+          "click('52') -> err:TimeoutError",
+          "click('504') -> click(504)",
+          "click('53') -> err:TimeoutError",
+          "click('532') -> click(532)",
+          "click('536') -> click(536)"
+        ]
+      },
+      {
+        "task_id": "abc-opinion",
+        "succeeded": true,
+        "steps": 3,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 2944.7,
+        "history": [
+          "click('8') -> click(8)",
+          "click('Cerrar men\u00fa principal') -> stale:Cerrar men\u00fa principal",
+          "click('29') -> click(29)"
+        ]
+      },
+      {
+        "task_id": "abc-internacional",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 2873.5,
+        "history": [
+          "click('8') -> click(8)",
+          "click('31') -> click(31)"
+        ]
+      },
+      {
+        "task_id": "abc-economia",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 44,
+        "observation_tokens_mean": 1691.8,
+        "history": [
+          "click('8') -> click(8)",
+          "click('187') -> click(187)",
+          "click('64') -> err:TimeoutError",
+          "click('352') -> click(352)",
+          "click('380') -> click(380)",
+          "click('384') -> click(384)"
+        ]
+      },
+      {
+        "task_id": "standaard-netbinnen",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 17,
+        "observation_tokens_mean": 2782.5,
+        "history": [
+          "click('10') -> click(10)",
+          "click('358') -> err:TimeoutError",
+          "click('97') -> click(97)",
+          "click('11') -> click(11)"
+        ]
+      },
+      {
+        "task_id": "standaard-digitalekrant",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 17,
+        "observation_tokens_mean": 867.5,
+        "history": [
+          "click('9') -> click(9)",
+          "click('6') -> click(6)",
+          "click('digitale-krant') -> stale:digitale-krant",
+          "click('3') -> click(3)",
+          "click('digitale-krant') -> stale:digitale-krant",
+          "click('digitale-krant') -> stale:digitale-krant"
+        ]
+      },
+      {
+        "task_id": "aljazeera-news",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1890,
+        "history": [
+          "click('220') -> click(220)",
+          "click('12') -> click(12)"
+        ]
+      },
+      {
+        "task_id": "aljazeera-sport",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1890,
+        "history": [
+          "click('220') -> click(220)",
+          "click('22') -> click(22)"
+        ]
+      }
+    ],
+    "C_flat_plus_loop_hint": [],
+    "D_flat_plus_generic_hint": []
+  },
+  "success_delta": 0.4616,
+  "paired": {
+    "both": 4,
+    "only_A": 0,
+    "only_B": 12
+  }
+}

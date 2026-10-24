@@ -1,0 +1,216 @@
+{
+  "cnn": {
+    "url": "https://www.cnn.com/",
+    "har": "cnn.har",
+    "live_blocked": 36,
+    "live_overlay": "Legal Terms and Privacy",
+    "live_total": 329,
+    "targets": [
+      [
+        "World",
+        "world"
+      ],
+      [
+        "Politics",
+        "politic"
+      ],
+      [
+        "Business",
+        "business"
+      ]
+    ],
+    "targets_recorded": 3
+  },
+  "lemonde": {
+    "url": "https://www.lemonde.fr/",
+    "har": "lemonde.har",
+    "live_blocked": 25,
+    "live_overlay": "Main menu",
+    "live_total": 111,
+    "targets": [
+      [
+        "International",
+        "international"
+      ],
+      [
+        "Economie",
+        "economie"
+      ],
+      [
+        "Culture",
+        "culture"
+      ]
+    ],
+    "targets_recorded": 3
+  },
+  "euronews": {
+    "url": "https://www.euronews.com/",
+    "har": "euronews.har",
+    "live_blocked": 171,
+    "live_overlay": "Welcome to euronews Consent Management",
+    "live_total": 587,
+    "targets": [
+      [
+        "Business",
+        "business"
+      ],
+      [
+        "Next",
+        "next"
+      ]
+    ],
+    "targets_recorded": 2
+  },
+  "mirror": {
+    "url": "https://www.mirror.co.uk/",
+    "har": "mirror.har",
+    "live_blocked": 48,
+    "live_overlay": "Processing of Your Personal Information",
+    "live_total": 258,
+    "targets": [
+      [
+        "Subscribe",
+        "subscribe"
+      ],
+      [
+        "About Us",
+        "about-us"
+      ]
+    ],
+    "targets_recorded": 2
+  },
+  "rte": {
+    "url": "https://www.rte.ie/news/",
+    "har": "rte.har",
+    "live_blocked": 36,
+    "live_overlay": "About Your Privacy",
+    "live_total": 210,
+    "targets": [
+      [
+        "Sport",
+        "sport"
+      ],
+      [
+        "Radio",
+        "radio"
+      ]
+    ],
+    "targets_recorded": 2
+  },
+  "irishtimes": {
+    "url": "https://www.irishtimes.com/",
+    "har": "irishtimes.har",
+    "live_blocked": 37,
+    "live_overlay": "We value your privacy",
+    "live_total": 491,
+    "targets": [
+      [
+        "Podcasts",
+        "podcasts"
+      ],
+      [
+        "Newsletters",
+        "newsletters"
+      ]
+    ],
+    "targets_recorded": 2
+  },
+  "repubblica": {
+    "url": "https://www.repubblica.it/",
+    "har": "repubblica.har",
+    "live_blocked": 25,
+    "live_overlay": "powered by I ricavi ottenuti dalla pubblicit\u00e0 personalizzata",
+    "live_total": 542,
+    "targets": [
+      [
+        "Rubriche",
+        "rubriche"
+      ]
+    ],
+    "targets_recorded": 1
+  },
+  "lavanguardia": {
+    "url": "https://www.lavanguardia.com/",
+    "har": "lavanguardia.har",
+    "live_blocked": 31,
+    "live_overlay": "\u00a1Bienvenido a La Vanguardia Gesti\u00f3n del consentimiento",
+    "live_total": 244,
+    "targets": [
+      [
+        "Internacional",
+        "internacional"
+      ],
+      [
+        "Politica",
+        "politica"
+      ],
+      [
+        "Opinion",
+        "opinion"
+      ]
+    ],
+    "targets_recorded": 3
+  },
+  "abc": {
+    "url": "https://www.abc.es/",
+    "har": "abc.har",
+    "live_blocked": 44,
+    "live_overlay": "Configura tu navegaci\u00f3n El contenido de ABC es fruto del tra",
+    "live_total": 349,
+    "targets": [
+      [
+        "Espana",
+        "espana"
+      ],
+      [
+        "Opinion",
+        "opinion"
+      ],
+      [
+        "Internacional",
+        "internacional"
+      ],
+      [
+        "Economia",
+        "economia"
+      ]
+    ],
+    "targets_recorded": 4
+  },
+  "standaard": {
+    "url": "https://www.standaard.be/",
+    "har": "standaard.har",
+    "live_blocked": 17,
+    "live_overlay": "Welkom bij De Standaard Toestemmingsbeheer",
+    "live_total": 192,
+    "targets": [
+      [
+        "Net binnen",
+        "net-binnen"
+      ],
+      [
+        "Digitale krant",
+        "digitalekrant"
+      ]
+    ],
+    "targets_recorded": 2
+  },
+  "aljazeera": {
+    "url": "https://www.aljazeera.com/",
+    "har": "aljazeera.har",
+    "live_blocked": 11,
+    "live_overlay": "You rely on Al Jazeera for truth and transparency",
+    "live_total": 176,
+    "targets": [
+      [
+        "News",
+        "news"
+      ],
+      [
+        "Sport",
+        "sport"
+      ]
+    ],
+    "targets_recorded": 2
+  }
+}

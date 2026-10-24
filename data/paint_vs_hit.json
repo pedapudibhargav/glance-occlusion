@@ -1,0 +1,80 @@
+{
+  "bbc": {
+    "elements_onscreen": 33,
+    "hit_covered": 33,
+    "paint_covered": 0,
+    "agree": 0,
+    "missed_by_paint": 33,
+    "paint_false_positive": 0,
+    "recall_of_paint": 0.0
+  },
+  "spiegel": {
+    "elements_onscreen": 27,
+    "hit_covered": 27,
+    "paint_covered": 1,
+    "agree": 1,
+    "missed_by_paint": 26,
+    "paint_false_positive": 0,
+    "recall_of_paint": 0.037
+  },
+  "ft": {
+    "elements_onscreen": 30,
+    "hit_covered": 30,
+    "paint_covered": 0,
+    "agree": 0,
+    "missed_by_paint": 30,
+    "paint_false_positive": 0,
+    "recall_of_paint": 0.0
+  },
+  "skysports": {
+    "elements_onscreen": 42,
+    "hit_covered": 42,
+    "paint_covered": 7,
+    "agree": 7,
+    "missed_by_paint": 35,
+    "paint_false_positive": 0,
+    "recall_of_paint": 0.167
+  },
+  "cnn": {
+    "elements_onscreen": 40,
+    "hit_covered": 36,
+    "paint_covered": 34,
+    "agree": 34,
+    "missed_by_paint": 2,
+    "paint_false_positive": 0,
+    "recall_of_paint": 0.944
+  },
+  "lemonde": {
+    "elements_onscreen": 29,
+    "hit_covered": 25,
+    "paint_covered": 21,
+    "agree": 21,
+    "missed_by_paint": 4,
+    "paint_false_positive": 0,
+    "recall_of_paint": 0.84
+  },
+  "euronews": {
+    "elements_onscreen": 170,
+    "hit_covered": 141,
+    "paint_covered": 127,
+    "agree": 127,
+    "missed_by_paint": 14,
+    "paint_false_positive": 0,
+    "recall_of_paint": 0.901
+  },
+  "irishtimes": {
+    "elements_onscreen": 43,
+    "hit_covered": 39,
+    "paint_covered": 37,
+    "agree": 37,
+    "missed_by_paint": 2,
+    "paint_false_positive": 0,
+    "recall_of_paint": 0.949
+  },
+  "_summary": {
+    "sites": 8,
+    "total_hit_covered": 373,
+    "total_missed_by_paint": 146,
+    "total_paint_false_positive": 0
+  }
+}

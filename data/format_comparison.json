@@ -1,0 +1,80 @@
+{
+  "bbc": {
+    "blocked_elements": 33,
+    "overlay_present": true,
+    "ax_nodes": 1673,
+    "ax_says_occluded": false,
+    "ax_chars": 694798,
+    "ax_has_dismiss_button": false,
+    "pw_says_occluded": false,
+    "pw_chars": 48424,
+    "pw_has_dismiss_button": true,
+    "gl_says_occluded": true,
+    "gl_chars": 5922,
+    "gl_has_dismiss_button": false
+  },
+  "spiegel": {
+    "blocked_elements": 27,
+    "overlay_present": true,
+    "ax_nodes": 8221,
+    "ax_says_occluded": false,
+    "ax_chars": 3489720,
+    "ax_has_dismiss_button": false,
+    "pw_says_occluded": false,
+    "pw_chars": 251128,
+    "pw_has_dismiss_button": true,
+    "gl_says_occluded": true,
+    "gl_chars": 36085,
+    "gl_has_dismiss_button": false
+  },
+  "ft": {
+    "blocked_elements": 32,
+    "overlay_present": true,
+    "ax_nodes": 3048,
+    "ax_says_occluded": false,
+    "ax_chars": 1177736,
+    "ax_has_dismiss_button": false,
+    "pw_says_occluded": false,
+    "pw_chars": 67757,
+    "pw_has_dismiss_button": true,
+    "gl_says_occluded": true,
+    "gl_chars": 11853,
+    "gl_has_dismiss_button": false
+  },
+  "skysports": {
+    "blocked_elements": 42,
+    "overlay_present": true,
+    "ax_nodes": 1394,
+    "ax_says_occluded": false,
+    "ax_chars": 594917,
+    "ax_has_dismiss_button": false,
+    "pw_says_occluded": false,
+    "pw_chars": 37744,
+    "pw_has_dismiss_button": true,
+    "gl_says_occluded": true,
+    "gl_chars": 6790,
+    "gl_has_dismiss_button": false
+  },
+  "cnn": {
+    "blocked_elements": 38,
+    "overlay_present": true,
+    "ax_nodes": 387,
+    "ax_says_occluded": false,
+    "ax_chars": 114460,
+    "pw_says_occluded": true,
+    "pw_chars": 85506,
+    "gl_says_occluded": true,
+    "gl_chars": 9729
+  },
+  "lemonde": {
+    "blocked_elements": 25,
+    "overlay_present": true,
+    "ax_nodes": 1541,
+    "ax_says_occluded": false,
+    "ax_chars": 650544,
+    "pw_says_occluded": false,
+    "pw_chars": 40867,
+    "gl_says_occluded": true,
+    "gl_chars": 4853
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "bbc": {
+    "blocker_holds_cross_origin_iframe": 33
+  },
+  "spiegel": {
+    "blocker_holds_cross_origin_iframe": 27
+  },
+  "ft": {
+    "blocker_holds_cross_origin_iframe": 30
+  },
+  "skysports": {
+    "blocker_holds_cross_origin_iframe": 42
+  },
+  "cnn": {
+    "blocker_is_plain_dom": 35
+  },
+  "lemonde": {
+    "blocker_is_plain_dom": 25
+  },
+  "euronews": {
+    "blocker_is_plain_dom": 141
+  },
+  "irishtimes": {
+    "blocker_is_plain_dom": 39
+  }
+}

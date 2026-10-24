@@ -1,0 +1,721 @@
+{
+  "model": "gpt-5-mini",
+  "arms": [
+    {
+      "arm": "A_flat",
+      "tasks": 17,
+      "succeeded": 3,
+      "success_rate": 0.1765,
+      "steps_mean": 5.29,
+      "observation_tokens_mean": 2041.5
+    },
+    {
+      "arm": "B_structured",
+      "tasks": 17,
+      "succeeded": 12,
+      "success_rate": 0.7059,
+      "steps_mean": 3.41,
+      "observation_tokens_mean": 1913.2
+    },
+    {
+      "arm": "C_flat_plus_loop_hint",
+      "tasks": 17,
+      "succeeded": 13,
+      "success_rate": 0.7647,
+      "steps_mean": 4.12,
+      "observation_tokens_mean": 1935.6
+    }
+  ],
+  "spent_usd": 0.1341,
+  "per_task": {
+    "A_flat": [
+      {
+        "task_id": "cnn-world",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2698,
+        "history": [
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "cnn-politics",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2698,
+        "history": [
+          "click('27') -> err:TimeoutError",
+          "click('27') -> err:TimeoutError",
+          "click('27') -> err:TimeoutError",
+          "click('27') -> err:TimeoutError",
+          "click('27') -> err:TimeoutError",
+          "click('27') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "cnn-business",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2698,
+        "history": [
+          "click('28') -> err:TimeoutError",
+          "click('28') -> err:TimeoutError",
+          "click('28') -> err:TimeoutError",
+          "click('28') -> err:TimeoutError",
+          "click('28') -> err:TimeoutError",
+          "click('28') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "cnn-health",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 34,
+        "observation_tokens_mean": 2694.8,
+        "history": [
+          "click('29') -> err:TimeoutError",
+          "click('29') -> err:TimeoutError",
+          "click('29') -> err:TimeoutError",
+          "click('29') -> err:TimeoutError",
+          "click('29') -> err:TimeoutError",
+          "click('29') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "cnn-travel",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 34,
+        "observation_tokens_mean": 2806.5,
+        "history": [
+          "click('568') -> err:TimeoutError",
+          "click('588') -> err:TimeoutError",
+          "click('588') -> err:TimeoutError",
+          "click('588') -> err:TimeoutError",
+          "click('588') -> err:TimeoutError",
+          "click('588') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "cnn-science",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2809.7,
+        "history": [
+          "click('594') -> err:TimeoutError",
+          "click('606') -> err:TimeoutError",
+          "click('606') -> err:TimeoutError",
+          "click('606') -> err:TimeoutError",
+          "click('606') -> err:TimeoutError",
+          "click('606') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "cnn-climate",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 34,
+        "observation_tokens_mean": 2806.5,
+        "history": [
+          "click('590') -> err:TimeoutError",
+          "click('610') -> err:TimeoutError",
+          "click('610') -> err:TimeoutError",
+          "click('610') -> err:TimeoutError",
+          "click('610') -> err:TimeoutError",
+          "click('610') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "cnn-entertainment",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 34,
+        "observation_tokens_mean": 2694.8,
+        "history": [
+          "click('30') -> err:TimeoutError",
+          "click('30') -> err:TimeoutError",
+          "click('30') -> err:TimeoutError",
+          "click('30') -> err:TimeoutError",
+          "click('30') -> err:TimeoutError",
+          "click('30') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lemonde-international",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1225,
+        "history": [
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lemonde-economie",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1216.7,
+        "history": [
+          "click('31') -> err:TimeoutError",
+          "click('262') -> err:TimeoutError",
+          "click('262') -> err:TimeoutError",
+          "click('262') -> err:TimeoutError",
+          "click('262') -> err:TimeoutError",
+          "click('262') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lemonde-politique",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1219.3,
+        "history": [
+          "click('275') -> err:TimeoutError",
+          "click('275') -> err:TimeoutError",
+          "click('275') -> err:TimeoutError",
+          "click('275') -> err:TimeoutError",
+          "click('275') -> err:TimeoutError",
+          "click('275') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lemonde-culture",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1226,
+        "history": [
+          "click('31') -> err:TimeoutError",
+          "click('32') -> err:TimeoutError",
+          "click('31') -> err:TimeoutError",
+          "click('31') -> err:TimeoutError",
+          "click('31') -> err:TimeoutError",
+          "click('31') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lemonde-sport",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1213.3,
+        "history": [
+          "click('278') -> err:TimeoutError",
+          "click('278') -> err:TimeoutError",
+          "click('278') -> err:TimeoutError",
+          "click('278') -> err:TimeoutError",
+          "click('278') -> err:TimeoutError",
+          "click('278') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "lemonde-planete",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1222.7,
+        "history": [
+          "click('29') -> err:TimeoutError",
+          "click('278') -> err:TimeoutError",
+          "click('29') -> err:TimeoutError",
+          "click('29') -> err:TimeoutError",
+          "click('29') -> err:TimeoutError",
+          "click('278') -> err:TimeoutError"
+        ]
+      },
+      {
+        "task_id": "aljazeera-news",
+        "succeeded": true,
+        "steps": 1,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1815,
+        "history": [
+          "click('11') -> click(11)"
+        ]
+      },
+      {
+        "task_id": "aljazeera-sport",
+        "succeeded": true,
+        "steps": 1,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1815,
+        "history": [
+          "click('21') -> click(21)"
+        ]
+      },
+      {
+        "task_id": "aljazeera-economy",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1846,
+        "history": [
+          "click('12') -> click(12)",
+          "click('13') -> click(13)",
+          "click('26') -> click(26)",
+          "click('30') -> click(30)"
+        ]
+      }
+    ],
+    "B_structured": [
+      {
+        "task_id": "cnn-world",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2777,
+        "history": [
+          "click('680') -> click(680)",
+          "click('26') -> click(26)"
+        ]
+      },
+      {
+        "task_id": "cnn-politics",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2777,
+        "history": [
+          "click('680') -> click(680)",
+          "click('27') -> click(27)"
+        ]
+      },
+      {
+        "task_id": "cnn-business",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 34,
+        "observation_tokens_mean": 2813,
+        "history": [
+          "click('673') -> click(673)",
+          "click('663') -> click(663)",
+          "click('652') -> click(652)",
+          "click('29') -> click(29)"
+        ]
+      },
+      {
+        "task_id": "cnn-health",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2777,
+        "history": [
+          "click('680') -> click(680)",
+          "click('29') -> click(29)"
+        ]
+      },
+      {
+        "task_id": "cnn-travel",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 34,
+        "observation_tokens_mean": 2739.5,
+        "history": [
+          "click('673') -> click(673)",
+          "click('575') -> click(575)"
+        ]
+      },
+      {
+        "task_id": "cnn-science",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 34,
+        "observation_tokens_mean": 2739.5,
+        "history": [
+          "click('673') -> click(673)",
+          "click('593') -> click(593)"
+        ]
+      },
+      {
+        "task_id": "cnn-climate",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2809.8,
+        "history": [
+          "click('680') -> click(680)",
+          "click('663') -> click(663)",
+          "click('634') -> click(634)",
+          "click('554') -> click(554)"
+        ]
+      },
+      {
+        "task_id": "cnn-entertainment",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 34,
+        "observation_tokens_mean": 2739.5,
+        "history": [
+          "click('673') -> click(673)",
+          "click('30') -> click(30)"
+        ]
+      },
+      {
+        "task_id": "lemonde-international",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1336.5,
+        "history": [
+          "click('318') -> click(318)",
+          "click('26') -> click(26)"
+        ]
+      },
+      {
+        "task_id": "lemonde-economie",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 469.7,
+        "history": [
+          "click('320') -> click(320)",
+          "click('263') -> click(263)",
+          "click('3') -> click(3)",
+          "click('8') -> click(8)",
+          "click('4') -> click(4)",
+          "type('5', 'economie') -> type(5)"
+        ]
+      },
+      {
+        "task_id": "lemonde-politique",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 469,
+        "history": [
+          "click('320') -> click(320)",
+          "click('275') -> click(275)",
+          "click('4') -> click(4)",
+          "click('3') -> click(3)",
+          "click('4') -> click(4)",
+          "type('5', 'politique') -> type(5)"
+        ]
+      },
+      {
+        "task_id": "lemonde-culture",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 469.3,
+        "history": [
+          "click('320') -> click(320)",
+          "click('283') -> click(283)",
+          "click('3') -> click(3)",
+          "click('3') -> click(3)",
+          "click('5') -> click(5)",
+          "type('5', 'culture') -> type(5)"
+        ]
+      },
+      {
+        "task_id": "lemonde-sport",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1277,
+        "history": [
+          "click('319') -> click(319)",
+          "click('277') -> click(277)"
+        ]
+      },
+      {
+        "task_id": "lemonde-planete",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 652.3,
+        "history": [
+          "click('279') -> err:TimeoutError",
+          "click('320') -> click(320)",
+          "click('279') -> click(279)",
+          "click('3') -> click(3)",
+          "click('4') -> click(4)",
+          "type('5', 'planete') -> type(5)"
+        ]
+      },
+      {
+        "task_id": "aljazeera-news",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1890,
+        "history": [
+          "click('220') -> click(220)",
+          "click('12') -> click(12)"
+        ]
+      },
+      {
+        "task_id": "aljazeera-sport",
+        "succeeded": true,
+        "steps": 2,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1890,
+        "history": [
+          "click('220') -> click(220)",
+          "click('22') -> click(22)"
+        ]
+      },
+      {
+        "task_id": "aljazeera-economy",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1898.7,
+        "history": [
+          "click('220') -> click(220)",
+          "click('13') -> click(13)",
+          "click('13') -> click(13)",
+          "click('13') -> click(13)",
+          "click('13') -> click(13)",
+          "click('13') -> click(13)"
+        ]
+      }
+    ],
+    "C_flat_plus_loop_hint": [
+      {
+        "task_id": "cnn-world",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 34,
+        "observation_tokens_mean": 2682.8,
+        "history": [
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('681') -> click(681)",
+          "click('26') -> click(26)"
+        ]
+      },
+      {
+        "task_id": "cnn-politics",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2687.5,
+        "history": [
+          "click('27') -> err:TimeoutError",
+          "click('27') -> err:TimeoutError",
+          "click('681') -> click(681)",
+          "click('27') -> click(27)"
+        ]
+      },
+      {
+        "task_id": "cnn-business",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 34,
+        "observation_tokens_mean": 2682.8,
+        "history": [
+          "click('28') -> err:TimeoutError",
+          "click('28') -> err:TimeoutError",
+          "click('681') -> click(681)",
+          "click('28') -> click(28)"
+        ]
+      },
+      {
+        "task_id": "cnn-health",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2705,
+        "history": [
+          "click('29') -> err:TimeoutError",
+          "click('29') -> err:TimeoutError",
+          "click('681') -> click(681)",
+          "click('29') -> click(29)"
+        ]
+      },
+      {
+        "task_id": "cnn-travel",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2772,
+        "history": [
+          "click('576') -> err:TimeoutError",
+          "click('588') -> err:TimeoutError",
+          "click('693') -> click(693)",
+          "click('575') -> click(575)"
+        ]
+      },
+      {
+        "task_id": "cnn-science",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2752.5,
+        "history": [
+          "click('594') -> err:TimeoutError",
+          "click('606') -> err:TimeoutError",
+          "click('693') -> click(693)",
+          "click('591') -> click(591)"
+        ]
+      },
+      {
+        "task_id": "cnn-climate",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2754.5,
+        "history": [
+          "click('597') -> err:TimeoutError",
+          "click('610') -> err:TimeoutError",
+          "click('693') -> click(693)",
+          "click('597') -> click(597)"
+        ]
+      },
+      {
+        "task_id": "cnn-entertainment",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 36,
+        "observation_tokens_mean": 2685.5,
+        "history": [
+          "click('30') -> err:TimeoutError",
+          "click('30') -> err:TimeoutError",
+          "click('681') -> click(681)",
+          "click('30') -> click(30)"
+        ]
+      },
+      {
+        "task_id": "lemonde-international",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1219.2,
+        "history": [
+          "click('26') -> err:TimeoutError",
+          "click('26') -> err:TimeoutError",
+          "click('319') -> click(319)",
+          "click('26') -> click(26)"
+        ]
+      },
+      {
+        "task_id": "lemonde-economie",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 817,
+        "history": [
+          "click('263') -> err:TimeoutError",
+          "click('263') -> err:TimeoutError",
+          "click('320') -> click(320)",
+          "click('263') -> click(263)",
+          "click('4') -> click(4)",
+          "click('5') -> click(5)"
+        ]
+      },
+      {
+        "task_id": "lemonde-politique",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 819.3,
+        "history": [
+          "click('28') -> err:TimeoutError",
+          "click('275') -> err:TimeoutError",
+          "click('320') -> click(320)",
+          "click('275') -> click(275)",
+          "click('3') -> click(3)",
+          "click('4') -> click(4)"
+        ]
+      },
+      {
+        "task_id": "lemonde-culture",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 824.8,
+        "history": [
+          "click('31') -> err:TimeoutError",
+          "click('32') -> err:TimeoutError",
+          "click('319') -> click(319)",
+          "click('31') -> click(31)",
+          "click('8') -> click(8)",
+          "click('4') -> click(4)"
+        ]
+      },
+      {
+        "task_id": "lemonde-sport",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 1208.8,
+        "history": [
+          "click('278') -> err:TimeoutError",
+          "click('278') -> err:TimeoutError",
+          "click('320') -> click(320)",
+          "click('278') -> click(278)"
+        ]
+      },
+      {
+        "task_id": "lemonde-planete",
+        "succeeded": false,
+        "steps": 6,
+        "blocked_at_start": 25,
+        "observation_tokens_mean": 817.2,
+        "history": [
+          "click('279') -> err:TimeoutError",
+          "click('279') -> err:TimeoutError",
+          "click('320') -> click(320)",
+          "click('279') -> click(279)",
+          "click('320') -> stale:320",
+          "click('8') -> click(8)"
+        ]
+      },
+      {
+        "task_id": "aljazeera-news",
+        "succeeded": true,
+        "steps": 1,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1815,
+        "history": [
+          "click('11') -> click(11)"
+        ]
+      },
+      {
+        "task_id": "aljazeera-sport",
+        "succeeded": true,
+        "steps": 1,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1815,
+        "history": [
+          "click('21') -> click(21)"
+        ]
+      },
+      {
+        "task_id": "aljazeera-economy",
+        "succeeded": true,
+        "steps": 4,
+        "blocked_at_start": 11,
+        "observation_tokens_mean": 1846,
+        "history": [
+          "click('12') -> click(12)",
+          "click('13') -> click(13)",
+          "click('27') -> click(27)",
+          "click('30') -> click(30)"
+        ]
+      }
+    ]
+  },
+  "success_delta": 0.5294,
+  "paired": {
+    "both": 2,
+    "only_A": 1,
+    "only_B": 10
+  }
+}

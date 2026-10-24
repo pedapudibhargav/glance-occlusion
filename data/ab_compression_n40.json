@@ -1,0 +1,533 @@
+{
+  "model": "gpt-5-mini",
+  "tasks": 40,
+  "max_steps": 6,
+  "spent_usd": 0.1458,
+  "arms": [
+    {
+      "arm": "A_standard",
+      "per_task": {
+        "accordion-mantine-T09": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "accordion",
+          "tier": "L3"
+        },
+        "autocomplete_freeform-mantine-T01": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "autocomplete_freeform",
+          "tier": "L0"
+        },
+        "clipboard_copy-antd-T04": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "clipboard_copy",
+          "tier": "L0"
+        },
+        "clipboard_copy-mantine-T01": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "clipboard_copy",
+          "tier": "L0"
+        },
+        "collapsible_disclosure-antd-T07": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "collapsible_disclosure",
+          "tier": "L1"
+        },
+        "collapsible_disclosure-mui-T10": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "collapsible_disclosure",
+          "tier": "L2"
+        },
+        "color_picker_2d-antd-T08": {
+          "succeeded": false,
+          "steps": 6,
+          "type": "color_picker_2d",
+          "tier": "L1"
+        },
+        "color_picker_2d-antd-T14": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "color_picker_2d",
+          "tier": "L2"
+        },
+        "combobox_editable_single-antd-T02": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "combobox_editable_single",
+          "tier": "L0"
+        },
+        "combobox_editable_single-antd-T06": {
+          "succeeded": false,
+          "steps": 6,
+          "type": "combobox_editable_single",
+          "tier": "L1"
+        },
+        "data_grid_editable-mui-T01": {
+          "succeeded": true,
+          "steps": 6,
+          "type": "data_grid_editable",
+          "tier": "L0"
+        },
+        "date_input_text-antd-T06": {
+          "succeeded": false,
+          "steps": 6,
+          "type": "date_input_text",
+          "tier": "L1"
+        },
+        "date_input_text-mantine-T01": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "date_input_text",
+          "tier": "L0"
+        },
+        "datetime_picker_range-mui-T03": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "datetime_picker_range",
+          "tier": "L0"
+        },
+        "download_trigger-mantine-T04": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "download_trigger",
+          "tier": "L1"
+        },
+        "drawer-mantine-T01": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "drawer",
+          "tier": "L0"
+        },
+        "drawer-mantine-T02": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "drawer",
+          "tier": "L0"
+        },
+        "file_list_manager-mantine-T03": {
+          "succeeded": true,
+          "steps": 3,
+          "type": "file_list_manager",
+          "tier": "L1"
+        },
+        "file_list_manager-mui-T03": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "file_list_manager",
+          "tier": "L0"
+        },
+        "file_upload_button-mui-T17": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "file_upload_button",
+          "tier": "L1"
+        },
+        "hover_card-mantine-T09": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "hover_card",
+          "tier": "L2"
+        },
+        "kanban_board_drag_drop-mantine-T03": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "kanban_board_drag_drop",
+          "tier": "L0"
+        },
+        "kanban_board_drag_drop-mui-T07": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "kanban_board_drag_drop",
+          "tier": "L1"
+        },
+        "link-mantine-T09": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "link",
+          "tier": "L2"
+        },
+        "listbox_single-antd-T08": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "listbox_single",
+          "tier": "L2"
+        },
+        "listbox_single-mui-T09": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "listbox_single",
+          "tier": "L2"
+        },
+        "mentions_input-mantine-T07": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "mentions_input",
+          "tier": "L2"
+        },
+        "menu-antd-T02": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "menu",
+          "tier": "L0"
+        },
+        "notification_center-antd-T08": {
+          "succeeded": true,
+          "steps": 3,
+          "type": "notification_center",
+          "tier": "L2"
+        },
+        "notification_center-antd-T10": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "notification_center",
+          "tier": "L3"
+        },
+        "popover-mui-T08": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "popover",
+          "tier": "L2"
+        },
+        "rating-antd-T09": {
+          "succeeded": false,
+          "steps": 6,
+          "type": "rating",
+          "tier": "L3"
+        },
+        "select_custom_single-antd-T06": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "select_custom_single",
+          "tier": "L1"
+        },
+        "split_button-antd-T05": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "split_button",
+          "tier": "L1"
+        },
+        "text_input-antd-T06": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "text_input",
+          "tier": "L1"
+        },
+        "text_input-mantine-T04": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "text_input",
+          "tier": "L1"
+        },
+        "text_input-mui-T04": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "text_input",
+          "tier": "L1"
+        },
+        "toggle_button_group_multi-antd-T07": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "toggle_button_group_multi",
+          "tier": "L1"
+        },
+        "tooltip-mantine-T03": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "tooltip",
+          "tier": "L0"
+        },
+        "tree_select-mantine-T06": {
+          "succeeded": true,
+          "steps": 3,
+          "type": "tree_select",
+          "tier": "L1"
+        }
+      },
+      "tasks_attempted": 40,
+      "tasks_succeeded": 36,
+      "task_success_rate": 0.9,
+      "probed_steps": 79,
+      "steps_per_task": 1.98,
+      "observation_chars_mean": null,
+      "observation_chars_before_mean": null,
+      "observation_lines_mean": null,
+      "observation_lines_before_mean": null,
+      "dropped_totals": {}
+    },
+    {
+      "arm": "B_verified",
+      "per_task": {
+        "accordion-mantine-T09": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "accordion",
+          "tier": "L3"
+        },
+        "autocomplete_freeform-mantine-T01": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "autocomplete_freeform",
+          "tier": "L0"
+        },
+        "clipboard_copy-antd-T04": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "clipboard_copy",
+          "tier": "L0"
+        },
+        "clipboard_copy-mantine-T01": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "clipboard_copy",
+          "tier": "L0"
+        },
+        "collapsible_disclosure-antd-T07": {
+          "succeeded": false,
+          "steps": 6,
+          "type": "collapsible_disclosure",
+          "tier": "L1"
+        },
+        "collapsible_disclosure-mui-T10": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "collapsible_disclosure",
+          "tier": "L2"
+        },
+        "color_picker_2d-antd-T08": {
+          "succeeded": false,
+          "steps": 6,
+          "type": "color_picker_2d",
+          "tier": "L1"
+        },
+        "color_picker_2d-antd-T14": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "color_picker_2d",
+          "tier": "L2"
+        },
+        "combobox_editable_single-antd-T02": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "combobox_editable_single",
+          "tier": "L0"
+        },
+        "combobox_editable_single-antd-T06": {
+          "succeeded": false,
+          "steps": 6,
+          "type": "combobox_editable_single",
+          "tier": "L1"
+        },
+        "data_grid_editable-mui-T01": {
+          "succeeded": false,
+          "steps": 6,
+          "type": "data_grid_editable",
+          "tier": "L0"
+        },
+        "date_input_text-antd-T06": {
+          "succeeded": false,
+          "steps": 6,
+          "type": "date_input_text",
+          "tier": "L1"
+        },
+        "date_input_text-mantine-T01": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "date_input_text",
+          "tier": "L0"
+        },
+        "datetime_picker_range-mui-T03": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "datetime_picker_range",
+          "tier": "L0"
+        },
+        "download_trigger-mantine-T04": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "download_trigger",
+          "tier": "L1"
+        },
+        "drawer-mantine-T01": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "drawer",
+          "tier": "L0"
+        },
+        "drawer-mantine-T02": {
+          "succeeded": false,
+          "steps": 6,
+          "type": "drawer",
+          "tier": "L0"
+        },
+        "file_list_manager-mantine-T03": {
+          "succeeded": true,
+          "steps": 3,
+          "type": "file_list_manager",
+          "tier": "L1"
+        },
+        "file_list_manager-mui-T03": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "file_list_manager",
+          "tier": "L0"
+        },
+        "file_upload_button-mui-T17": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "file_upload_button",
+          "tier": "L1"
+        },
+        "hover_card-mantine-T09": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "hover_card",
+          "tier": "L2"
+        },
+        "kanban_board_drag_drop-mantine-T03": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "kanban_board_drag_drop",
+          "tier": "L0"
+        },
+        "kanban_board_drag_drop-mui-T07": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "kanban_board_drag_drop",
+          "tier": "L1"
+        },
+        "link-mantine-T09": {
+          "succeeded": true,
+          "steps": 4,
+          "type": "link",
+          "tier": "L2"
+        },
+        "listbox_single-antd-T08": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "listbox_single",
+          "tier": "L2"
+        },
+        "listbox_single-mui-T09": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "listbox_single",
+          "tier": "L2"
+        },
+        "mentions_input-mantine-T07": {
+          "succeeded": true,
+          "steps": 3,
+          "type": "mentions_input",
+          "tier": "L2"
+        },
+        "menu-antd-T02": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "menu",
+          "tier": "L0"
+        },
+        "notification_center-antd-T08": {
+          "succeeded": true,
+          "steps": 3,
+          "type": "notification_center",
+          "tier": "L2"
+        },
+        "notification_center-antd-T10": {
+          "succeeded": false,
+          "steps": 6,
+          "type": "notification_center",
+          "tier": "L3"
+        },
+        "popover-mui-T08": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "popover",
+          "tier": "L2"
+        },
+        "rating-antd-T09": {
+          "succeeded": false,
+          "steps": 6,
+          "type": "rating",
+          "tier": "L3"
+        },
+        "select_custom_single-antd-T06": {
+          "succeeded": false,
+          "steps": 6,
+          "type": "select_custom_single",
+          "tier": "L1"
+        },
+        "split_button-antd-T05": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "split_button",
+          "tier": "L1"
+        },
+        "text_input-antd-T06": {
+          "succeeded": false,
+          "steps": 6,
+          "type": "text_input",
+          "tier": "L1"
+        },
+        "text_input-mantine-T04": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "text_input",
+          "tier": "L1"
+        },
+        "text_input-mui-T04": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "text_input",
+          "tier": "L1"
+        },
+        "toggle_button_group_multi-antd-T07": {
+          "succeeded": true,
+          "steps": 2,
+          "type": "toggle_button_group_multi",
+          "tier": "L1"
+        },
+        "tooltip-mantine-T03": {
+          "succeeded": true,
+          "steps": 1,
+          "type": "tooltip",
+          "tier": "L0"
+        },
+        "tree_select-mantine-T06": {
+          "succeeded": true,
+          "steps": 3,
+          "type": "tree_select",
+          "tier": "L1"
+        }
+      },
+      "tasks_attempted": 40,
+      "tasks_succeeded": 30,
+      "task_success_rate": 0.75,
+      "probed_steps": 102,
+      "steps_per_task": 2.55,
+      "observation_chars_mean": 478.8,
+      "observation_chars_before_mean": 2354.3,
+      "observation_lines_mean": 15.8,
+      "observation_lines_before_mean": 74.0,
+      "dropped_totals": {
+        "covered": 214,
+        "unnamed": 104,
+        "zero_area": 43,
+        "no_bid": 0,
+        "non_actionable": 213
+      }
+    }
+  ],
+  "paired": {
+    "tasks_both_arms_ran": 40,
+    "only_B": 0,
+    "only_A": 6,
+    "mcnemar_exact_two_sided_p": 0.03125,
+    "note": "A null here means no detectable difference at this sample size, not equivalence."
+  },
+  "success_delta": -0.15,
+  "observation_reduction": 0.7966
+}
