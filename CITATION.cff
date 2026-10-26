@@ -6,6 +6,7 @@ authors:
   - family-names: Pedapudi
     given-names: Bhargav
     alias: pedapudibhargav
+    orcid: "https://orcid.org/0009-0002-8523-8415"
 abstract: >-
   Browser agents are given a list of named elements that cannot express
   occlusion, so a covered element is indistinguishable from a clickable one.

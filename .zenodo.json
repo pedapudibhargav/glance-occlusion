@@ -1,0 +1,30 @@
+{
+  "title": "Covered: Occlusion-Aware Observations for Web Agents (code)",
+  "upload_type": "software",
+  "description": "<p>Measurement code and the four-arm ablation for the finding that no observation format deployed to LLM browser agents expresses occlusion, so a covered element is indistinguishable from a clickable one.</p><p>Across eleven live sites, labelling occlusion moves task success from 4/26 to 19/26 (McNemar exact two-sided p = 0.00006; seven sites better, none worse, p = 0.0156) at fewer observation tokens, replicates on a second model, and reproduces on a deterministic HAR replay benchmark (2/24 to 11/24, p = 0.00391).</p><p>A paint-order occlusion detector shipped in a widely used agent library recovers 0.84 to 0.95 of covered elements when the blocker is in the main document and 0.00 to 0.17 when it is inside a cross-origin iframe, missing 146 of 373 covered elements with zero false positives, because paint order is computed per document while the compositor is not.</p><p>The repository also carries twenty-seven corrections to this project's own claims, each with its cause, the signal that exposed it, and a verification level.</p>",
+  "access_right": "open",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Pedapudi, Bhargav",
+      "orcid": "0009-0002-8523-8415"
+    }
+  ],
+  "keywords": [
+    "web agents",
+    "LLM agents",
+    "browser automation",
+    "accessibility tree",
+    "occlusion",
+    "Chrome DevTools Protocol",
+    "reproducible benchmark",
+    "empirical software engineering"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/pedapudibhargav/glance-occlusion",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
